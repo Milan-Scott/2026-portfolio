@@ -55,3 +55,27 @@ body {
     /* Optional: give the box a width to see the centering effect */
     width: 300px;
   }
+
+  #about {
+    display: flex;
+    width: 100%;
+    height: 470px;
+    /* background-color: darkmagenta; */
+    border-bottom: solid 10px white;
+  }
+  
+  #about-me {
+    width: 580px;
+    height: 470px;
+    margin-left: auto;
+    border-left: solid 10px white;
+    /* background-color: violet; */
+    font-family: Schoolbell;
+    font-size: 25pt;
+    color: white;
+  }
+
+  .center-text {
+    text-align: center;
+    width: 300px;
+  }
