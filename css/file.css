@@ -39,6 +39,19 @@ body {
     color: white;
 }
 
+#top_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#link_education {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
 #mid_box {
     width: 1024px;
     height: 305px;
