@@ -39,17 +39,29 @@ body {
     color: white;
 }
 
+.education {
+  font-family: Schoolbell;
+  font-size: 25pt;
+  color: white;
+}
+
+.skills {
+  font-family: Schoolbell;
+  font-size: 25pt;
+  color: white;
+}
+
+.home {
+  font-family: Schoolbell;
+  font-size: 25pt;
+  color: white;
+}
+
 #top_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-#link_education {
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
 }
 
 #mid_box {
@@ -84,11 +96,19 @@ body {
     border-left: solid 10px white;
     /* background-color: violet; */
     font-family: Schoolbell;
-    font-size: 25pt;
+    font-size: 27pt;
     color: white;
   }
 
   .center-text {
     text-align: center;
     width: 300px;
+  }
+
+  #about-me-edu {
+    width: 580px;
+    height: 470px;
+    font-family: Schoolbell;
+    font-size: 27pt;
+    color: white;
   }
