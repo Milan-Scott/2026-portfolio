@@ -16,7 +16,7 @@ body {
 #main_container {
     border: solid 10px white;
     width: 1024px;
-    height: 3000px;
+    height: 1250px;
     margin: 0 auto;
 }
 
@@ -72,8 +72,9 @@ body {
 
 #info_text {
     font-family: Schoolbell;
-    font-size: 39pt;
+    font-size: 30pt;
     color: white;
+    text-align: center;
 }
 .centered-box {
     text-align: center;
@@ -83,20 +84,21 @@ body {
 
   #about {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
     width: 100%;
-    height: 470px;
+    height: 305px;
     /* background-color: darkmagenta; */
-    border-bottom: solid 10px white;
   }
   
   #about-me {
     width: 580px;
     height: 470px;
     margin-left: auto;
-    border-left: solid 10px white;
     /* background-color: violet; */
     font-family: Schoolbell;
-    font-size: 27pt;
+    font-size: 23pt;
     color: white;
   }
 
@@ -109,6 +111,11 @@ body {
     width: 580px;
     height: 470px;
     font-family: Schoolbell;
-    font-size: 27pt;
-    color: white;
+    font-size: 23pt;
+    color: rgb(255, 255, 255);
+    /* border: solid 1px red; */
+    margin-top: 25px;
+    text-align: left;
   }
+
+  
