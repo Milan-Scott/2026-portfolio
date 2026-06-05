@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(189, 204, 212);    
+    background-color: #e9dcd1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,108 +14,332 @@ body {
   
 
 #main_container {
-    border: solid 10px white;
+    border: solid 10px #7c7067;
+    background-color: #a09082;
     width: 1024px;
-    height: 1250px;
+    height: 3000px;
     margin: 0 auto;
 }
 
-#top_box {
-    width: 1024px;
-    height: 475px;
-    border-bottom: solid 10px white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* align-items: */
-    /* border-left: solid 1px black;
-    border-right: solid 1px black; */
-    
-}
-
-#Name {
-    font-family: Schoolbell;
-    font-size: 35pt;
-    color: white;
-}
-
-.education {
-  font-family: Schoolbell;
-  font-size: 25pt;
-  color: white;
-}
-
-.skills {
-  font-family: Schoolbell;
-  font-size: 25pt;
-  color: white;
-}
-
-.home {
-  font-family: Schoolbell;
-  font-size: 25pt;
-  color: white;
-}
-
-#top_container {
+#title_box {
+  height: 226px;
+  width: 1024px;
+  border-bottom: solid 10px #7c7067;
+  /* background-color: aqua; */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-#mid_box {
-    width: 1024px;
-    height: 305px;
-    border-bottom: solid 10px white;
+.Lani {
+  font-family: "Schoolbell";
+  color: #cdd7b7;
+  text-align: center;
+  font-size: 54pt;
 }
 
-#info_text {
-    font-family: Schoolbell;
-    font-size: 30pt;
-    color: white;
-    text-align: center;
+#index_box {
+  height: 115px;
+  width: 1024px;
+  border-bottom: solid 10px #7c7067;
 }
-.centered-box {
-    text-align: center;
-    /* Optional: give the box a width to see the centering effect */
-    width: 300px;
-  }
 
-  #about {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 305px;
-    /* background-color: darkmagenta; */
-  }
+.index {
+  text-align: center;
+  font-family: "Schoolbell";
+  color: #cdd7b7;
+  font-size: 40pt;
+}
+
+#shelves_1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#bookshelf_1 {
+  height: 190px;
+  width: 490px;
+  border-right: solid 10px #7c7067;
+  border-bottom: solid 10px #7c7067;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.1px;
+}
+
+/* Dark background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  #about-me {
-    width: 580px;
-    height: 470px;
-    margin-left: auto;
-    /* background-color: violet; */
-    font-family: Schoolbell;
-    font-size: 23pt;
-    color: white;
-  }
-
-  .center-text {
-    text-align: center;
-    width: 300px;
-  }
-
-  #about-me-edu {
-    width: 580px;
-    height: 470px;
-    font-family: Schoolbell;
-    font-size: 23pt;
-    color: rgb(255, 255, 255);
-    /* border: solid 1px red; */
-    margin-top: 25px;
-    text-align: left;
-  }
-
+  /* Hidden initial state */
+  opacity: 0;
+  pointer-events: none;
   
+  /* Smooth transition for overlay */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-box {
+  width: 300px;
+  height: 190px;
+  overflow: visible; /* Prevents the image from spilling outside its borders if desired */
+  border-radius: 8px;
+}
+.book_1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  
+  /* Core transition properties */
+  transform: scale(1); 
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow 0.3s ease-in-out */
+}
+
+.book_1:hover {
+  transform: scale(1.1); /* Enlarges the image by 10% */
+  /* box-shadow: 0 10px 20px #7c7067; Adds a depth effect */
+  cursor: pointer;
+} 
+
+#bookshelf_2 {
+  height: 190px;
+  width: 531px;
+  border-bottom: solid 10px #7c7067;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: flex-end;
+  gap: 0.1px;
+}
+
+/* Dark background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Hidden initial state */
+  opacity: 0;
+  pointer-events: none;
+  
+  /* Smooth transition for overlay */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-box {
+  width: 300px;
+  height: 190px;
+  overflow: visible; /* Prevents the image from spilling outside its borders if desired */
+  border-radius: 8px;
+}
+.book_2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  
+  /* Core transition properties */
+  transform: scale(1); 
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow 0.3s ease-in-out */
+}
+
+.book_2:hover {
+  transform: scale(1.1); /* Enlarges the image by 10% */
+  /* box-shadow: 0 10px 20px #7c7067; Adds a depth effect */
+  cursor: pointer;
+} 
+
+#main_container2 {
+  border: solid 30px #cec6e2;
+  background-color: #f4efea;
+  width: 1024px;
+  height: 3000px;
+  margin: 0 auto;
+}
+  
+
+.chapter_1 {
+  font-family: "Schoolbell";
+  text-align: center;
+  font-size: 40pt;
+  color: #34383a;
+}
+
+#main_container3 {
+  border: solid 30px #bfdbe8;
+  background-color: #f4efea;
+  width: 1024px;
+  height: 3000px;
+  margin: 0 auto;
+}
+
+.chapter_2 {
+  font-family: "Schoolbell";
+  text-align: center;
+  font-size: 40pt;
+  color: #34383a;
+}
+
+#shelves_2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#bookshelf_3 {
+  height: 190px;
+  width: 483px;
+  border-bottom: solid 10px #7c7067;
+  border-right: solid 10px #7c7067 ;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: flex-end;
+  gap: 0.1px;
+}
+
+/* Dark background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Hidden initial state */
+  opacity: 0;
+  pointer-events: none;
+  
+  /* Smooth transition for overlay */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-box {
+  width: 300px;
+  height: 190px;
+  overflow: visible; /* Prevents the image from spilling outside its borders if desired */
+  border-radius: 8px;
+}
+.book_3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  
+  /* Core transition properties */
+  transform: scale(1); 
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow 0.3s ease-in-out */
+}
+
+.book_3:hover {
+  transform: scale(1.1); /* Enlarges the image by 10% */
+  /* box-shadow: 0 10px 20px #7c7067; Adds a depth effect */
+  cursor: pointer;
+} 
+
+#main_container4 {
+  border: solid 30px #f7f0b4;
+  background-color: #f4efea;
+  width: 1024px;
+  height: 3000px;
+  margin: 0 auto;
+}
+.chapter_3 {
+  font-family: "Schoolbell";
+  text-align: center;
+  font-size: 40pt;
+  color: #34383a;
+}
+
+
+
+#bookshelf_4 {
+  height: 190px;
+  width: 534px;
+  border-bottom: solid 10px #7c7067;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: flex-end;
+  gap: 0.1px;
+}
+
+/* Dark background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Hidden initial state */
+  opacity: 0;
+  pointer-events: none;
+  
+  /* Smooth transition for overlay */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-box {
+  width: 300px;
+  height: 190px;
+  overflow: visible; /* Prevents the image from spilling outside its borders if desired */
+  border-radius: 8px;
+}
+.book_4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  
+  /* Core transition properties */
+  transform: scale(1); 
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow 0.3s ease-in-out */
+}
+
+.book_4:hover {
+  transform: scale(1.1); /* Enlarges the image by 10% */
+  /* box-shadow: 0 10px 20px #7c7067; Adds a depth effect */
+  cursor: pointer;
+} 
+
+#main_container5 {
+  border: solid 30px #6f7c66;
+  background-color: #f4efea;
+  width: 1024px;
+  height: 3000px;
+  margin: 0 auto;
+}
+
+.chapter_4 {
+  font-family: "Schoolbell";
+  text-align: center;
+  font-size: 40pt;
+  color: #34383a;
+}
