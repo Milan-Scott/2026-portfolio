@@ -63,7 +63,7 @@ body {
   border-bottom: solid 10px #7c7067;
   display: flex;
   align-items: flex-end;
-  gap: 0.1px;
+  gap: 0.2px;
 }
 
 /* Dark background overlay */
@@ -118,7 +118,7 @@ body {
   /* background-color: aqua; */
   display: flex;
   align-items: flex-end;
-  gap: 0.1px;
+  gap: 0.2px;
 }
 
 /* Dark background overlay */
@@ -172,6 +172,8 @@ body {
   width: 1024px;
   height: 3000px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
   
 
@@ -179,6 +181,13 @@ body {
   font-family: "Schoolbell";
   text-align: center;
   font-size: 40pt;
+  color: #34383a;
+}
+
+.Ch1_link {
+  font-family: "Schoolbell";
+  text-align: center;
+  font-size: 12pt;
   color: #34383a;
 }
 
@@ -210,7 +219,7 @@ body {
   /* background-color: aqua; */
   display: flex;
   align-items: flex-end;
-  gap: 0.1px;
+  gap: 0.2px;
 }
 
 /* Dark background overlay */
@@ -281,7 +290,7 @@ body {
   /* background-color: aqua; */
   display: flex;
   align-items: flex-end;
-  gap: 0.1px;
+  gap: 0.2px;
 }
 
 /* Dark background overlay */
